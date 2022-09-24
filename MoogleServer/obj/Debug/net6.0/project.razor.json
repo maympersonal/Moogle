@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleServer\\MoogleServer.csproj",
+  "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleServer\\MoogleServer.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16460,34 +16460,34 @@
   "RootNamespace": "MoogleServer",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleServer\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleServer\\App.razor",
+      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleServer\\App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleServer\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleServer\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleServer\\Pages\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleServer\\Pages\\_Layout.cshtml",
       "TargetPath": "Pages\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleServer\\Shared\\MainLayout.razor",
+      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleServer\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleServer\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleServer\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleServer\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
     }
   ],
   "SerializationFormat": "0.2"
