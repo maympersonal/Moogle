@@ -14,6 +14,12 @@
     </div>
 }
 
+@if (firstrun) {
+    <div class="firstrun">
+        <p><strong>Atención:</strong> En la primera ejecución se inicializan los documentos por lo que demora un poco más.</p>
+    </div>
+}
+
 <ul class="results">
     @if(noresult==false){
         @foreach (var item in result.Items()) {
@@ -37,11 +43,13 @@
 
 @code {
     public bool noresult = false;
+    public bool firstrun = true;
     private string query = "";
     private SearchResult result = new SearchResult();
 
     private void RunQuery() {
         noresult=false;
+        firstrun = false;
         result = Moogle.Query(query);
         if(result.Count==0)
             noresult=true;
