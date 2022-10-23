@@ -106,9 +106,9 @@ public class Consulta
 						else//Si no esta en los terminos importantes
 							lTerminosImportantes.Add(temp, contador); //se agrega  a los terminos importantes, contador tiene la cantidad de * que aparecen antes del termino
 						if (lTerminos.ContainsKey(temp))//Si esta en los terminos
-                			lTerminos[temp]=lTerminos[temp]+contador;//Se incrementa la cantidad de apariciones, contador tiene la cantidad de * que aparecen antes del termino
+                			lTerminos[temp]=lTerminos[temp]+1;//Se incrementa la cantidad de apariciones, contador tiene la cantidad de * que aparecen antes del termino
 						else //Si no esta en los terminos
-							lTerminos.Add(temp, contador); //se agrega  a los de terminos, contador tiene la cantidad de * que aparecen antes del termino
+							lTerminos.Add(temp, 1); //se agrega  a los de terminos, contador tiene la cantidad de * que aparecen antes del termino
 						ultimotermino=temp;//se guarda el último termino procesado para su uso posterior
 					
 					}

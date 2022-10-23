@@ -209,9 +209,9 @@ public class Nucleo
 				DocumentosConsulta.Add(Documentos[i]);//se adiciona a la lista
 		
 		//creamos el vector TF de la consulta. la cantidad de elementos serán la cantidad de terminos de la consulta y para cada par de términos que se quiera saber la distancia se le agrega un elememnto
-		int[] vectorconsulta = new int[ConsultaRealizada.Terminos.Count()+ConsultaRealizada.TerminosCercanos.Count()];//cantidad de términos consulta + cantidad de par de términos por distancia
+		int[] vectorconsulta = new int[ConsultaRealizada.Terminos.Count()];//cantidad de términos consulta + cantidad de par de términos por distancia
 		//creamos matriz TF de los documentos, que va a tener una fila por cada documento y una columna por cada elemento del vector TF de la consulta
-		int[,] vectoresdocumentos = new int[DocumentosConsulta.Count, ConsultaRealizada.Terminos.Count()+ConsultaRealizada.TerminosCercanos.Count()];
+		int[,] vectoresdocumentos = new int[DocumentosConsulta.Count, ConsultaRealizada.Terminos.Count()];
 		
 		
 		//damos valores a los elementos del vector TF de la consulta
@@ -220,10 +220,7 @@ public class Nucleo
             vectorconsulta[k] =termino.Value;//ponemos la cantidad de veces que aparece el término
 			k++;
         }
-		foreach (var termino in ConsultaRealizada.TerminosCercanos) {//para cada uno de los pares de términos de la consulta
-            vectorconsulta[k] =1;//ponemos la distancia entre ellos en la consulta a 1
-			k++;
-        }
+		
 		
 		//damos valores a los elementos de la matriz TF de los documentos
 		int j = 0;
@@ -233,10 +230,7 @@ public class Nucleo
 				vectoresdocumentos[j,k] = doc.CuentaTermino(termino.Key);//ponemos la cantidad de veces que aparece el término en el documento
 				k++;
 			}
-			foreach (var termino in ConsultaRealizada.TerminosCercanos){//para cada uno de los pares de términos de la consulta
-				vectoresdocumentos[j,k] = doc.DistanciaMinTerminos(termino.X,termino.Y);//ponemos la distancia mínima entre ellos en el documento
-				k++;
-			}
+			
 			j++;
 		}	
 		
@@ -282,7 +276,7 @@ public class Nucleo
 					}
 					if (sumacolumna == 0)//si la suma de la colunma sigue siendo 0
 						estadotermino[i] = 2;//lo marcamos como paso 2
-					else if (SugerenciaBusqueda.Length == 0)//guardamos la sugerencia para ser mostrada con el resultado
+					if (SugerenciaBusqueda.Length == 0)//guardamos la sugerencia para ser mostrada con el resultado
 						SugerenciaBusqueda = palabra;
 					else
 						SugerenciaBusqueda = SugerenciaBusqueda + ", " + palabra;//si hay mas de una sugerencia las concatenamos
@@ -358,7 +352,22 @@ public class Nucleo
 		}
 
 		double[] pesos = CalcularPesosDocumentos(vectorconsulta, vectoresdocumentos);//calculamos los pesos de los documentos
-
+		// calculando los nuevos pesos utilizando las palabras importantes y las palabras cercanas
+		for(int i=0;i<pesos.Length;i++)
+		{
+			foreach(var elem in ConsultaRealizada.TerminosCercanos)//le sumamos al peso 1 dividido por la distancia entre las palabras
+			{	
+				pesos[i]+=(double)1/(double)DocumentosConsulta[i].DistanciaMinTerminos(elem.X,elem.Y);
+				
+			}
+			
+			foreach(var elemt in ConsultaRealizada.TerminosImportantes)//le sumamos al peso la divición de la cantidad de veces que se repite la palabra importante en el documento por la importancia de esta(número de *)
+			{  
+			    
+				pesos[i]+=(double)DocumentosConsulta[i].CuentaTermino(elemt.Key)/(double)elemt.Value;
+			}
+		 
+		}
 		SearchItem[] items = new SearchItem[DocumentosConsulta.Count];//inicializamos los resultados
 
 		for ( int i = 0; i < DocumentosConsulta.Count; i++){//para cada documento

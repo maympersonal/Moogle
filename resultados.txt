@@ -1,0 +1,15 @@
+como ejecutarlo: dotnet watch run --project MoogleServer
+consulta: !caballos ^colegios mejunje instrumentos ***importantes hacendado economizar ~ fuerzas José Marti
+resultados
+E:\universidad\Apps\moogle\Content\Abonos  Portal José Martí.txt 0,31077176
+E:\universidad\Apps\moogle\Content\A aprender en las haciendas  Portal José Martí.txt 0,2149593
+E:\universidad\Apps\moogle\Content\Congreso forestal  Portal José Martí.txt 0,20422354
+E:\universidad\Apps\moogle\Content\Carta de Nueva York [27 de noviembre 1884]  Portal José Martí.txt 0,20294544
+E:\universidad\Apps\moogle\Content\Una distribución de diplomas en un colegio de los Estados Unidos  Portal José Martí.txt 0,20280482
+E:\universidad\Apps\moogle\Content\Carta de José Martí [23 de febrero de 1892]  Portal José Martí.txt 0,20201626
+E:\universidad\Apps\moogle\Content\Trabajo manual en las escuelas  Portal José Martí.txt 0,2016244
+E:\universidad\Apps\moogle\Content\Educación científica  Portal José Martí.txt 0,2013082
+E:\universidad\Apps\moogle\Content\Cartas de Martí  Portal José Martí.txt 0,20096384
+
+
+

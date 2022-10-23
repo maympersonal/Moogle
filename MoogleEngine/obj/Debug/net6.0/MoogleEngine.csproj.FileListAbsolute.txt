@@ -34,3 +34,15 @@ C:\Users\Miguel Alejandro\Documents\1er ano\Clases\Programación\moogle-main\Moo
 C:\Users\Miguel Alejandro\Documents\1er ano\Clases\Programación\moogle-main\MoogleEngine\obj\Debug\net6.0\refint\MoogleEngine.dll
 C:\Users\Miguel Alejandro\Documents\1er ano\Clases\Programación\moogle-main\MoogleEngine\obj\Debug\net6.0\MoogleEngine.pdb
 C:\Users\Miguel Alejandro\Documents\1er ano\Clases\Programación\moogle-main\MoogleEngine\obj\Debug\net6.0\ref\MoogleEngine.dll
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\bin\Debug\net6.0\MoogleEngine.deps.json
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\bin\Debug\net6.0\MoogleEngine.dll
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\bin\Debug\net6.0\MoogleEngine.pdb
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\MoogleEngine.csproj.AssemblyReference.cache
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\MoogleEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\MoogleEngine.AssemblyInfoInputs.cache
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\MoogleEngine.AssemblyInfo.cs
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\MoogleEngine.csproj.CoreCompileInputs.cache
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\MoogleEngine.dll
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\refint\MoogleEngine.dll
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\MoogleEngine.pdb
+C:\Users\Miguel Alejandro\Documents\GitHub\Moogle\MoogleEngine\obj\Debug\net6.0\ref\MoogleEngine.dll

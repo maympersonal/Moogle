@@ -274,9 +274,10 @@ public static class Utiles
 	 	int maximo = 0;//se utiliza para guardar la máxima cantidad de palabra encontradas en un texto
 	 	if(palabras.Length>0 && texto.Length>0) {//si se cumple la condicion
 			for(int i = 0; i < texto.Length; i++){//para cada elemento de texto
+				List<string> ltexto = texto[i].Split(Separadores.ToArray()).ToList();
 				cantidadpalbaras[i]=0;//se inicializa a 0 la cantidad de palabras encontradas
 				for(int j = 0; j < palabras.Length; j++) {//para cada una de las palabras a buscar
-					if (texto[i].Contains(palabras[j]))//si el texto las contiene
+					if (ltexto.IndexOf(palabras[j])>=0)//si el texto las contiene
 						cantidadpalbaras[i]++;//se incrementa 
 						if (maximo < cantidadpalbaras[i] )//si el máximo es menor a la cantidad de palabras que contiene
 							maximo = cantidadpalbaras[i];//se le asigna nuevo valor máximo

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleEngine\\MoogleEngine.csproj": {}
+    "C:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleEngine\\MoogleEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleEngine\\MoogleEngine.csproj": {
+    "C:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleEngine\\MoogleEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleEngine\\MoogleEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleEngine\\MoogleEngine.csproj",
         "projectName": "MoogleEngine",
-        "projectPath": "C:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleEngine\\MoogleEngine.csproj",
+        "projectPath": "C:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleEngine\\MoogleEngine.csproj",
         "packagesPath": "C:\\Users\\Miguel Alejandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Miguel Alejandro\\Documents\\1er ano\\Clases\\Programación\\moogle-main\\MoogleEngine\\obj\\",
+        "outputPath": "C:\\Users\\Miguel Alejandro\\Documents\\GitHub\\Moogle\\MoogleEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\ProgramData\\Xamarin\\NuGet\\",
